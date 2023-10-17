@@ -66,3 +66,8 @@ export const Title = styled.h2`
   font-size: 28px;
   text-align: center;
 `;
+
+export const Text = styled.p`
+  text-align: center;
+  font-weight: 600;
+`;

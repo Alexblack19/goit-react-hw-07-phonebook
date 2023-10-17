@@ -13,7 +13,3 @@ export const Item = styled.li`
     font-size: 20px;
   }
 `;
-export const Text = styled.p`
-  text-align: center;
-  font-weight: 600;
-`;
