@@ -1,4 +1,5 @@
 export const InitialState = {
   contacts: [],
-  filter: '',
+  isLoading: false,
+  error: null,
 };
