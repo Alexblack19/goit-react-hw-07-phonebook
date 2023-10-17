@@ -27,7 +27,7 @@ export function ContactForm() {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
 
-  function handleSubmit(e) {
+  const handleSubmit = e => {
     e.preventDefault();
     const newContact = { id: nanoid(), name, number };
 
@@ -36,7 +36,7 @@ export function ContactForm() {
       : dispatch(addContact(newContact));
 
     clearForm();
-  }
+  };
 
   function Notification(name) {
     Notiflix.Notify.warning(`${name} is already in your contact list.`, {
