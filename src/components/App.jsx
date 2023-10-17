@@ -23,7 +23,6 @@ export function App() {
       <MainTitle>Phonebook</MainTitle>
       <ContactForm />
       <>
-        {isLoading && !error && <b>Request in progress...</b>}
         {contacts?.length > 0 && (
           <>
             <Title>Contacts</Title>
@@ -31,6 +30,7 @@ export function App() {
             <ContactList />
           </>
         )}
+        {isLoading && !error && <b>Request in progress...</b>}
       </>
     </Container>
   );

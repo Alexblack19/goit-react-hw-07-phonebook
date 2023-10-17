@@ -5,10 +5,11 @@ import { getVisibleContacts } from 'redux/selectors';
 
 export function ContactList() {
   const visibleContacts = useSelector(getVisibleContacts);
+  console.log(visibleContacts)
 
   return (
     <>
-      {visibleContacts.length ? (
+      {visibleContacts.length > 0 ? (
         <List>
           {visibleContacts.map(item => (
             <Item key={item.id}>
